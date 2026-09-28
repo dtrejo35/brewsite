@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewSite - Home</title>
+</head>
+<body>
+
+    <h1>Welcome to BrewSite</h1>
+
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('brewery') }}">Brewery</a>
+    </nav>
+
+    <h2>About BrewSite</h2>
+
+    <p>
+        Welcome to BrewSite, a website created to explore breweries,
+        coffee, and the brewing process.
+    </p>
+
+    <p>
+        This page includes additional information about brewing and
+        the products offered by our brewery.
+    </p>
+
+</body>
+</html>
+
+<h2>Featured Brew</h2>
+
+<p>
+    One of the things I enjoy about BrewSite is learning about
+    different brewing styles and the work that goes into making
+    a good drink.
+</p>
+
+<img src="{{ url_for('static', filename='brewery.jpg') }}"
+     alt="Brewery image"
+     width="500">
